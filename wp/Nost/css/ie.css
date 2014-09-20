@@ -1,0 +1,15 @@
+/* 
+	Title:		IE PATCHES
+	Author: 	denis@snapsize.com
+	
+	EXAMPLES:
+	.className		{ *width:; } for ie
+	.className		{ _width:; } for ie6
+	.className		{ .width:; } for ie7
+*/
+
+
+/* SELF CLEARING FLOATS
+----------------------------------------------------------------------------------------------------*/
+* html .group 					{ height: 1%; }/* IE6 */
+*:first-child+html .group 		{ min-height: 1px; } /* IE7 */
