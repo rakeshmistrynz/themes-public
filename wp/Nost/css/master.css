@@ -199,6 +199,18 @@ article ol li li li,.comment-body ol li li li
 	margin-top:0;
 }
 
+article .sidebar ul, article .sidebar ol {
+    padding: 0;
+}
+
+article .sidebar ul li, article .sidebar ul li li, article .sidebar ul li li li {
+    list-style: none;
+}
+
+.sidebar {
+    padding-top: 40px;
+}
+
 
 label
 {
@@ -1326,6 +1338,14 @@ div.pic135 p
 /* COLOR STRIPES */
 .grey {background-color:#e2dbd1;}
 .bg-texture {background: url("../images/fabric_of_squares_gray.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+
+.spacetop {
+    padding-top: 55px;
+}
+
+article h5 {
+    margin-bottom: 10px;
+}
 
 /* Mobile */
 @media (max-width:960px) {
