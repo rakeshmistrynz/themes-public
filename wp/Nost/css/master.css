@@ -1078,25 +1078,173 @@ strong.description
 #page_wrap h3 {margin:40px 0 10px;}
 
 
+.flex_list {
+    border: 1px solid #ececec;
+    padding: 25px;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    float:left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.clearall {
+    clear:both;
+}
+
+.flex_list ul {
+    float: left;
+    width: 45%;
+}
+
+.flex_list ul.last {
+    margin-right: 0;
+    float: right;
+}
+
 /* Accordion */
 
-.feature-list {margin-top:30px;}
+.feature-list {margin-top:30px;margin-bottom: 50px;}
 .feature-list h5 
 {
-	float:none;
-	clear:both;
-	width:auto;
-	height:auto;
-	font-size:1.8em;
+  float:none;
+  clear:both;
+  width:auto;
+  height:auto;
+  font-size:1.8em;
 }
 
 .features {margin:40px 0;}
 .features h3 {font-weight: 700;}
-.features h5 {font-size:1.5em; font-weight: 700; text-align:center; padding:10px 0; background-color: #aaa; color: #fff; }
-.features-box {height:200px; margin:10px 0; border:1px solid #888; overflow:hidden;}
+.features h5 {font-size:1.3em; font-weight: 700; text-align:center; }
+.features-box { 
+  border: 1px solid #ececec;
+  padding: 210px 15px 15px;
+  background: #fff;
+  height:150px;
+  margin:10px 0;
+  overflow:hidden;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.features-box h5 { position: relative; z-index: 10; border-bottom: 1px solid #f2f2f2; padding-bottom: 12px; margin-bottom: 15px; }
+.featured-image {position: absolute; top: 40px; left: 0; right: 0; text-align: center;}
+.featured-image img {
+  border:0; 
+  width: 25%;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
 .features-box  p{margin-bottom:10px;}
-.features-text {font-size:0.9em; padding:5px;}
-.features-hover {font-size:0.9em;}
+.features-text { text-align: center;font-size:1em; padding:5px; position: relative; z-index: 10; }
+.features-text ul, .features-text li {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.features-text li {
+  margin-bottom: 4px;
+}
+.features-hover {font-size:0.9em; text-align: center;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.features-hover p {
+  text-align: center;
+}
+
+.features-box:hover {
+  padding-top: 100px;
+  height: 260px;
+}
+.features-box:hover .features-hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.features-box:hover .featured-image img {
+  width: 45%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  opacity: 0.1;
+}
+
+.onoff img,
+.trademe img {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.with_phone img {
+  margin-top: 30px;
+  width: 50%;
+}
+
+.new_prod img, 
+.flexible img, 
+.sizes img,
+.make_own_pos img{
+  width: 45%;
+}
+
+.dw_product img,
+.reports img,
+.accounting img {
+  width: 35%;
+}
+
+.supl_photos img,
+.dig_camera img,
+.connect_pos img,
+.online_sales img {
+  margin-top: 10px;
+  width: 45%;
+}
+
+.dw_photos img,
+.dw_book img {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 50%;
+}
+
+.features-box:hover .onoff img, 
+.features-box:hover .new_prod img,
+.features-box:hover .flexible img,
+.features-box:hover .sizes img,
+.features-box:hover .with_phone img,
+.features-box:hover .supl_photos img,
+.features-box:hover .dig_camera img,
+.features-box:hover .make_own_pos img,
+.features-box:hover .connect_pos img,
+.features-box:hover .online_sales img,
+.features-box:hover .dw_photos img,
+.features-box:hover .dw_book img,
+.features-box:hover .trademe img  {
+  width: 70%;
+}
 
 
 #accordion .ui-accordion-header-active > span + span:hover { background:none }
