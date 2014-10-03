@@ -1,0 +1,24 @@
+/*  
+	Theme Name: 	NOSTRUM
+	Theme URI:		http://minimalwpthemes.com
+	Description: 	Themed by <a href="http://snapsize.com">Studio Snapsize</a>.
+	Author: 		Denis Leblanc 
+	Author URI: 	http://snapsize.com
+	Version: 		V.1
+	License: 		GNU General Public License
+	License URI: 	license/README_License.txt
+	Tags: 			black, white, fixed-width, threaded-comments, custom-menu
+*/
+
+// Ect
+
+/* IMPORT STYLESHEETS AND HIDE FROM IE/MAC \*/
+@import "_reset.scss";
+@import "_fluidgrid.scss";
+@import "_master.scss";
+@import "_font.scss";
+
+/* end import/hide */
+@import "_mvent.scss";
+
+@import "_mobile";

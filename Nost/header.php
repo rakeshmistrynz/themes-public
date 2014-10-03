@@ -15,7 +15,7 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header id="header">
   <div id="header-wrapper">
   <div class="container_12 group">
     <div class="grid-inner">
@@ -24,9 +24,10 @@
       </h1>
 
       <?php if (has_nav_menu('global-nav')) : ?>
-      <nav>
+      <nav id="navigation">
         <?php wp_nav_menu(array('theme_location' => 'global-nav', 'fallback_cb' => false, 'container' => false, 'menu_class' => '', 'items_wrap' => '<ul>%3$s</ul>', 'before' => '<h5>', 'after' => '</h5>')); ?>
       </nav>
+      <div id="mobile_menu"><span></span></div>
       <?php endif; ?>
     </div>
   </div>

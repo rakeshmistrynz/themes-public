@@ -1,0 +1,83 @@
+img.buttonImg
+{
+	height: 18px;
+	width: auto;
+	vertical-align: -20%;
+}
+
+img.screenShot
+{
+	border: 1px solid #021a40;
+}
+
+.sidebar ul
+{
+	margin: 0;
+}
+
+.sidebar li.page_item
+{
+	text-align: left;
+	font-weight: normal;
+	font-size:100%;
+
+}
+
+.sidebar li.page_item_has_children ul.children li.page_item
+{
+	padding-left: 1em;
+	font-size: 100%;
+}
+
+.sidebar li.current_page_item
+{
+	font-weight: bold;
+}
+
+#page_nav.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.single .post h2
+{
+    font-size:1.5em;
+    line-height:1;
+    font-weight:500;
+    margin:0 0 20px;
+    -webkit-background-size:contain;
+    background:url(images/helpLogo.png) no-repeat 5px 0;
+    background-size: contain;
+    background-color: transparent;
+    padding:8px 13px 8px 50px
+}
+
+.help#content_wrap
+{
+    margin-top: 10px;
+}
+
+article.post
+{
+    margin-bottom: 0px;
+}
+
+.single .line
+{
+    height: 0px;
+}
+
+.post p
+{
+    margin-bottom: 1em;
+}
+
+.post h3
+{
+    font-size:1.3em;
+    margin-bottom:5px;
+    font-weight:500;
+}
+
