@@ -21,7 +21,7 @@ $(document).bind("mobileinit", function () {
 });
 
 /*
-jQuery("#accordion").accordion({
+$("#accordion").accordion({
   collapsible: true,
   active: false,
   heightStyle: "content",
@@ -32,7 +32,7 @@ jQuery("#accordion").accordion({
 });
 
 $('.video').each(function () {
-  var player = $f('.video'),
+  var player = $f(this),
       $this = $(this);
 /*
   $this.prop({
@@ -46,7 +46,8 @@ $('.video').each(function () {
       currentPlayer = player;
     });
   });
-}); */
+});
+*/
 
 });
 

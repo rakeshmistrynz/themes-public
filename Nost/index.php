@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section id="page_wrap" class="container_12 group">
+	<section id="page_wrap" class="container_12 group help">
 
 		<section id="content_wrap" class="primary grid_8 suffix_1 group">
 
