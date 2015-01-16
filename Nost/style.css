@@ -1384,6 +1384,116 @@ div.pic135 p {
 article h5 {
   margin-bottom: 10px; }
 
+/* Home START */
+
+.page-id-352 .video p
+{
+margin:0;
+}
+
+/* Home END */
+
+/* TradeMe pages START */
+
+.page-id-1853 .features-box h5, .page-id-1888 .features h5
+{
+font-weight:400;
+font-size:20pt;
+color:#c17228;
+}
+.page-id-1853 .grey, .page-id-1853 strong.description,
+.page-id-1888 .grey, .page-id-1888 strong.description
+{
+background-color: #7c8eab;
+color:#ffffff;
+}
+.page-id-1853 .features-text ul, .page-id-1853 .features-text li {
+    list-style: outside disc;
+    margin: 5px;
+    text-align: left;
+}
+.spacey
+{
+padding:15px 0;
+}
+.xtra-spacey
+{
+padding:40px 0;
+}
+.xxtra-spacey
+{
+padding:60px 0;
+}
+.page-id-1853 .xtra-spacey a
+{
+color:#3366ff;
+}
+.page-id-1853 .grid_6 h3
+{
+text-align:center;
+font-size:20pt;
+color:#c17228;
+}
+.page-id-1853 .grid_6
+{padding-bottom:20px;}
+a.callus
+{
+font-weight:300;
+color:#ffffff;
+font-size:25pt;
+text-align:center;
+display:block;
+margin-left:auto;
+margin-right:auto;
+background-color:#c17228;
+border:1px solid #ffffff;
+padding:5px 15px 5px 50px;
+border-radius:4px;
+background-image:url('images/icons/phone.png');
+background-repeat:no-repeat;
+background-position:5px center;
+margin-top:30px;
+}
+.callus:hover
+{color:#ffffff;}
+h2.center-title
+{
+font-weight:300;
+margin-bottom:20px;
+font-size:25pt;
+text-align:center;
+}
+h3.center
+{text-align:center;}
+.page-id-1853 .textarea-wrap textarea
+{
+height:100px;
+}
+.page-id-1853 input[type="submit"]
+{
+float:right;
+background:#333333;
+font-family:Roboto Slab, sans-serif;
+font-weight:300;
+font-size:13pt;
+border:1px solid #ffffff;
+padding:5px;
+}
+
+.page-id-1888 .features img
+{
+border:1px solid #ececec;
+}
+.page-id-1888 .features h3
+{
+text-align:center;
+font-weight:600;
+font-size:25pt;
+color:#7c8eab;
+}
+
+/* TradeMe pages END */
+
 /* Mobile */
 @media (max-width: 960px) {
   #searchform {
@@ -1395,7 +1505,8 @@ article h5 {
     text-align: center; }
   #topquote {
     font-size: 3em;
-    background-size: contain; } }
+    background-size: contain; } 
+	}
 
 @media (min-width: 841px) and (max-width: 960px) {
   #accordion h5 {

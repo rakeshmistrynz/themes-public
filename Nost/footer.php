@@ -22,7 +22,7 @@
 			</div>
 		</div>
 
-		<p id="copyright">&copy;2014 mVentory Ltd.</p>
+		<p id="copyright">&copy;2015 mVentory Ltd.</p>
 		</div>
 	</div>
 	</footer>
