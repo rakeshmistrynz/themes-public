@@ -254,4 +254,16 @@ if (function_exists('register_sidebar')) {
 	}
 }
 
+function my_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $o = '<div class="container_12 group"><div class="grid_6 prefix_3 suffix_3 xtra-spacey"><form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
+    ' . __( "Hi there. This is a protected post.<br/><br/>Please, enter your personal password: " ) . '<input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /><br/><br/><input type="submit" name="Submit" value="' . esc_attr__( "Show me the post" ) . '" />
+    </form></div></div>
+    ';
+    return $o;
+}
+add_filter( 'the_password_form', 'my_password_form' );
+
+
 ?>

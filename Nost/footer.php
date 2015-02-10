@@ -4,7 +4,7 @@
 			<ul class="grid-wrapper group">
 				<li class="grid_4 alpha"><a class="get-it-item" id="get-it-demo" title="Learn from success" href="/case-studies/">Case studies</a></li>
 				<li class="grid_4"><a class="get-it-item" id="get-it-trial" title="Download the app and try it in action with our demo store" target="_blank" href="http://try.mventory.com">Free trial</a></li>
-				<li class="grid_4 omega"><a class="get-it-item" id="get-it-get" title="Get mVentory now to start selling more" href="get-started/">Get it now</a></li>
+				<li class="grid_4 omega"><a class="get-it-item" id="get-it-get" title="Get mVentory now to start selling more" href="/get-started/">Get it now</a></li>
 			</ul>
 		</div>
 		<div id="footer-wrap">
@@ -21,7 +21,12 @@
 			</section>
 			</div>
 		</div>
-
+<div class="footer-partners">
+<a id="trademe" href="/trademe-extension-for-magento/">TradeMe</a>
+<a id="aws-s3" href="http://www.magentocommerce.com/magento-connect/aws-s3-cdn-for-product-images.html">AWS S3</a>
+<a id="kudos" href="http://www.kudos.co.nz/">Kudos</a>
+<a id="orion" href="http://www.sam.co.nz/ourproducts/orion/">Orion</a>
+</div>
 		<p id="copyright">&copy;2015 mVentory Ltd.</p>
 		</div>
 	</div>
