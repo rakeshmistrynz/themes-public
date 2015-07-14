@@ -1126,11 +1126,11 @@ strong.description
 .feature-list {margin-top:30px;margin-bottom: 50px;}
 .feature-list h5 
 {
-  float:none;
-  clear:both;
-  width:auto;
-  height:auto;
-  font-size:1.8em;
+	float:none;
+	clear:both;
+	width:auto;
+	height:auto;
+	font-size:1.8em;
 }
 
 .features {margin:40px 0;}
@@ -1314,7 +1314,7 @@ div.pic135 p
 	margin: 0;
 	position: relative;
 	width: 100%;
-	height: 280px;
+	height: 220px;
 	padding: 0;
 }
 

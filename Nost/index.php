@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-	<section id="page_wrap" class="container_12 group help">
+	<section id="page_wrap" class="container_12 group">
 
-		<section id="content_wrap" class="primary grid_8 suffix_1 group">
+		<section id="content_wrap">
 
 			<?php if (have_posts()) : ?>
 			
@@ -33,12 +33,17 @@
 			
 				<?php while (have_posts()) : the_post(); ?>
 	
-					<article id="post-<?php the_ID(); ?>" <?php post_class('group'); ?>>
+					<article id="post-<?php the_ID(); ?>" <?php post_class('group grid_3'); ?>>
+						<div class="features-box">
+							<div class="featured-image new_prod">
+								<?php the_post_thumbnail('thumbnail'); ?>
+							</div>
+							<h5><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h5>
+							<div class="features-text"><?php the_excerpt(); ?></div>
+						</div>
+					</article>
 	
-						<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-	
-					</article><!-- post-ID -->
-	
+
 				<?php endwhile; ?>
 				
 			<?php else : ?>
@@ -49,7 +54,7 @@
 			
 		</section><!-- content_wrap -->
 
-		<?php get_sidebar(); ?>
+		<!-- ?php get_sidebar(); ? -->
 			
 	</section><!-- page_wrap -->
 

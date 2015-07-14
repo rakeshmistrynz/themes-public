@@ -1,8 +1,8 @@
-<?php  get_header("help"); ?>
+<?php get_header(); ?>
 	
 	<section id="page_wrap" class="container_12 group">
 
-		<section id="content_wrap" class="primary grid_8 suffix_1 group help alpha">
+		<section id="content_wrap" class="primary grid_8 suffix_1 group">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -16,7 +16,7 @@
 					
 					</div><!-- entry -->
 					
-					<?php // pagination for long posts (aka nextpage tag) - we don't really need this 
+					<?php 
 						$args = array(
 							'before'			=> '<nav class="pagination_nav group">
 													<span class="label">' . __('Pages:', 'Nostrum_V1') . ' </span>',
@@ -27,8 +27,21 @@
 							'pagelink'			=> '%',
 							'echo'				=> 1
 						); 
-					    wp_link_pages($args); ?>
+					?>
+					<?php wp_link_pages($args); ?>
+					
+					<aside class="share group">
 
+					    <div class="a2a_kit a2a_default_style">
+						    <a class="a2a_button_facebook_like"></a>
+						    <a class="a2a_button_twitter_tweet"></a>
+						    <a class="a2a_button_google_plusone"></a>
+						</div>
+						
+						<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+					
+					</aside><!-- sidebar -->
+			
 				</article><!-- post-ID -->
 
 				<?php comments_template(); ?>
@@ -37,8 +50,8 @@
 
 		</section><!-- content_wrap -->
 
-		<?php // get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 			
 	</section><!-- page_wrap -->
-<div class="line"></div>
-<?php get_footer("help"); ?>
+
+<?php get_footer(); ?>

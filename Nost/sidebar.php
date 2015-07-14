@@ -1,12 +1,12 @@
 <aside class="sidebar grid_3 group omega">
 
     <?php 
-//if (function_exists('dynamic_sidebar') && dynamic_sidebar('Blog Sidebar')) : else : 
+if (function_exists('dynamic_sidebar') && dynamic_sidebar('Blog Sidebar')) : else : 
 // Add a documentation sidebar to Doc pages only
 // Andy 09/05/2014
 //if (function_exists('dynamic_sidebar') && in_array(10,wp_get_post_categories(get_the_ID())) && dynamic_sidebar('Doc Sidebar')) : elseif(function_exists('dynamic_sidebar') && !in_array(10,wp_get_post_categories(get_the_ID())) && dynamic_sidebar('Blog Sidebar')) : else :
-get_sidebar('doc');
-if (0):
+//get_sidebar('doc');
+//if (1):
 ?>
 
     	<?php get_search_form(); ?>
