@@ -1,21 +1,22 @@
-<?php /*
+<?php  
+/*
 Template Name: Full width help
 */
-?>
+get_header(); ?>
 
+	<section id="page_wrap" class="primary">
 
-<?php  get_header(); ?>
-	
-	<section id="page_wrap" class="container_12 group">
-
-		<section id="content_wrap" class="primary grid_8 suffix_1 group help alpha">
+		<section id="content_wrap" class="primary group help">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class('group'); ?>>
-			
-					<h2><?php the_title(); ?></h2>
-
+					<section id="title_wrap" class="grey">
+						<div class="container_12 group">
+							<h1 class="grey"><?php the_title(); ?></h1>
+						</div>
+					</section>
+				
 					<div class="entry group">	
 						
 						<?php the_content(); ?>

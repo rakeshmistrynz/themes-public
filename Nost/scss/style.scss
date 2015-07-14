@@ -14,11 +14,10 @@
 
 /* IMPORT STYLESHEETS AND HIDE FROM IE/MAC \*/
 @import "_reset.scss";
+@import "_mixins";
 @import "_fluidgrid.scss";
-@import "_master.scss";
 @import "_font.scss";
-
 /* end import/hide */
 @import "_mvent.scss";
-
+@import "_master.scss";
 @import "_mobile";

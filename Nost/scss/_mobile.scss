@@ -4,7 +4,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+.footer-partners{width:100%;}
+.features-box {
+  padding: 210px 15px 15px;}
+  .get-it-item {padding-left:60px!important;}
 	.container_12 {
 		margin-left: 0;
 		margin-right: 0;
@@ -37,7 +40,7 @@
 		h1{ 
 			display: block;
 			float: left;
-			margin: 15px 0;
+			margin: 15px 0px;
 	
 			a {
 				width: 140px;
@@ -115,7 +118,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width:481px) and (max-width : 768px) {
-
+.footer-partners{width:100%;}
+.features-box {
+  padding: 330px 15px 15px;}
+  .get-it-item {padding-left:60px!important;}
 	.grid-wrapper {
 		margin: 0;
 	}
@@ -270,6 +276,11 @@
 }
 
 @media only screen and (max-width : 480px) {
+	.footer-partners{width:100%;}
+	.footer-partners a {margin:0;}
+	a.callus
+	{font-size:20pt;}
+	.get-it-item {padding-left:60px!important;}
 	.container_12 .grid_1,.container_12 .grid_2,.container_12 .grid_3,.container_12 .grid_4,.container_12 .grid_5,.container_12 .grid_6,.container_12 .grid_7,.container_12 .grid_8,.container_12 .grid_9,.container_12 .grid_10,.container_12 .grid_11,.container_12 .grid_12{width:100%;margin-left:0;margin-right:0}
 
 	.container_12 {

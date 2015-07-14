@@ -1,0 +1,21 @@
+$large-width: 992px;
+$medium-width: 768px;
+$small-width: 480px;
+
+@mixin large-device {
+  @media only screen and (max-width: $large-width) {
+    @content;
+  }
+}
+
+@mixin medium-device {
+  @media only screen and (min-width: $small-width) and (max-width: $medium-width ) {
+    @content;
+  }
+}
+
+@mixin small-device {
+  @media only screen and (max-width: $small-width) {
+    @content;
+  }
+}
