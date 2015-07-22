@@ -1,12 +1,18 @@
 <?php get_header(); ?>
-	
+
 	<section id="page_wrap" class="container_12 group">
 
-		<section id="content_wrap" class="primary grid_8 suffix_1 group">
+		<section id="content_wrap" class="primary grid_12 group">
+
+			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+				<?php if(function_exists('bcn_display'))
+				{
+					bcn_display();
+				}?></div>
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class('group'); ?>>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('group grid_8'); ?>>
 			
 					<h2><?php the_title(); ?></h2>
 
@@ -48,9 +54,9 @@
 
 			<?php endwhile; endif; ?>
 
-		</section><!-- content_wrap -->
+			<?php get_sidebar(); ?>
 
-		<?php get_sidebar(); ?>
+		</section> <!-- content_wrap -->
 			
 	</section><!-- page_wrap -->
 

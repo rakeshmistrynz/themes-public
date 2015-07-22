@@ -1,4 +1,4 @@
-<aside class="sidebar grid_3 group omega">
+<aside class="sidebar grid_4 group omega">
 
     <?php 
 if (function_exists('dynamic_sidebar') && dynamic_sidebar('Blog Sidebar')) : else : 

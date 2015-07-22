@@ -133,3 +133,45 @@ jQuery(function ($) {
     };
     app.init();
 });
+
+/* Fix Menu
+----------------------------------------------------------------------------------------------------*/
+
+//Add class - callback function to keep menu open if redirected by link inside menu
+function open_menu(){
+
+	jQuery("#responsive-menu").addClass('menu-open');
+};
+
+//Close the menu
+jQuery(".close-button").on('click',function(event){
+
+	event.stopPropagation();
+	localStorage.removeItem("menu-open");
+	jQuery("#responsive-menu").removeClass('menu-open');
+	jQuery("#responsive-menu").css({'display':'none','left':'-300px'});
+
+});
+
+//Check to see if menu is open when user moves to another page
+jQuery(window).on('unload', function(){
+
+	if(jQuery('#responsive-menu').hasClass('RMOpened')||jQuery('#responsive-menu').hasClass('menu-open')){
+
+		localStorage.setItem("menu-open", true);
+
+	}else{
+
+		localStorage.removeItem("menu-open");
+	}
+});
+
+// Check the local storage - then execute callback function. 
+jQuery(document).ready(function(){
+
+	if(localStorage.getItem("menu-open")){
+
+		open_menu();
+	}
+})
+

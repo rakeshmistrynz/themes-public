@@ -1788,4 +1788,359 @@ h3.center {
 		text-align: center;
 	}
 }
+
+/* Post Styling
+----------------------------------------------------------------------------------------------------*/
+
+//Style Breadcrumbs on Post Page
+div.breadcrumbs{
+
+	margin-top: 15px;
+	margin-bottom: 25px;
+	padding-left: 1%;
+
+	@include medium-device{
+
+		padding-left: 2%;
+	}
+
+	@include small-device{
+
+		padding-left: 2%;
+	}
+}
+
+//Style sidebar on post page, make it full height so extends down the page. 
+.container_12 aside.sidebar{
+
+	position: absolute;
+	height: 100%;
+	right: 0;
+	top: 0;
+	padding: 60px 2em 0;
+	background-color: #0796DC;
+	box-sizing: border-box;
+
+	ul{
+
+		margin: 0 0 1.25em;
+	}
+
+	h2, li{
+
+		text-align: left;
+	}
+
+	@include medium-device{
+
+		position: relative;
+		height: auto;
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+
+		h2, li{
+
+			text-align: center;
+		}
+	}
+
+	@include small-device{
+
+		position: relative;
+		height: auto;
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+
+		h2, li{
+		
+			text-align: center;
+		}
+	}
+}
+
+//Hide any overflow from the sidebar overflowing the content wrapper
+.single-post #content_wrap{
+
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+}
+
+//Style the post content inside article tag to stop it from being cut out on the edges. 
+.single-post article{
+
+		@include medium-device{
+
+		padding: 0 2%;
+		box-sizing: border-box;
+	}
+
+	@include small-device{
+
+		padding: 0 2%;
+		box-sizing: border-box;
+
+	}
+}
+
+//Remove unnecessary padding
+.single-post #page_wrap{
+
+	padding: 0;
+}
+
+//Add padding instead margin
+.single-post section.grid_8{
+
+	margin-left: 0;
+	padding-left: 1%;
+}
+
+//Give Post content white background.
+.single-post aside.grid_4{
+
+	h2, li a{
+
+	color: white;
+	}
+}
+
+//Align heading with wrapper styling. 
+.single .post h2{
+
+	padding: 0;
+	background: none;
+}
+
+/* Front Page
+----------------------------------------------------------------------------------------------------*/
+
+//Switch icons
+#action-demos {
+	background: url("images/watermark-large.png") no-repeat scroll center left;
+	background-size: contain;
+}
+
+#action-download {
+
+	background: url("images/watermark-cart.png") no-repeat scroll center right;
+	background-size: contain;
+}
+
+//Give breathing space to video
+#video{
+
+	background: none;
+	padding: 1.5em;
+
+	@include medium-device{
+
+		padding: 0;
+	}
+	@include small-device{
+
+		padding: 0;
+	}
+
+}
+
+//Increase size of mventory slogan below video
+#bottom-quote{
+
+	div.container_12{
+
+		width: 100%;
+	}
+
+	.grid_12{
+
+		margin: 0;
+	}
+
+	.grid_12 h3{
+
+		text-align: center;
+		margin-top: 0.5em;
+		font-size: 2.5em;
+		font-family: 'Roboto Condensed', sans-serif;
+		letter-spacing: initial;
+
+		@include medium-device{
+
+			font-size: 2em;
+		}
+		@include small-device{
+
+			font-size: 2em;
+		}
+	}
+} 
+
+
+//Change position of icons above footer to be consistent on all pages.
+#get-it .get-it-item{
+
+	background-position: 95%;
+
+}
+
+//Fix overlap of heading in #actions section in small screen view
+#actions{
+
+	@include small-device{
+
+		#action-support h3, #action-demos h3{
+			
+			height: 4.5em;
+			line-height: 1.5em;
+
+		}
+
+		#action-download h3{
+
+			height: 3em;
+			line-height: 1.5em;
+		}
+
+	}
+}
+
+//Correct styling for header navigation in medium screen view
+header nav{
+
+	@include medium-device{
+
+		margin: 0;
+		width: 100% !important;
+
+		ul{
+			text-align: center;
+		}
+	}
+}
+
+//Remove repeating menu items in desktop view appear in slide out menu.
+#responsive-menu ul{
+
+	@media only screen and (min-width: 480px){
+
+		li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5){
+
+			display: none;
+		}
+	}
+}
+
+//Style to have menu open when directed from a link inside the menu
+#responsive-menu.menu-open{
+
+	display: block;
+	left: 0px;
+}
+
+
+/* Pricing Page
+----------------------------------------------------------------------------------------------------*/
+
+//Class for Pricing Grid
+.pricing-grid{
+
+	margin-top: 40px;
+
+	@include medium-device{
+
+		.grid_4{
+
+			width: 100%;
+		}
+	}
+}
+
+//Pricing item container
+.pricing-box {
+  border: 1px solid #ececec;
+  padding: 180px 15px 15px;
+  background: #fff;
+  margin: 10px 0;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  height: 480px;
+
+  @include medium-device{
+	
+	padding: 0;
+	height: initial;
+  }
+
+  @include small-device{
+
+  	height: auto;
+  }
+}
+
+//Pricing Heading
+.pricing-box h5 {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #113F8C;
+}
+
+//Pricing Image Container
+.pricing-box .pricing-image {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  @include medium-device{
+  	position: relative;
+  	display: block;
+  	margin-top: 1em;
+  	top: 0
+  }
+}
+
+//Pricing Image
+.pricing-box .pricing-image img {
+  border: 0;
+}
+
+//Pricing Text
+.pricing-box .pricing-text {
+  text-align: center;
+  font-size: 1em;
+  padding: 5px;
+  position: relative;
+  z-index: 10;
+}
+
+//Pricing List
+.pricing-box ul{
+
+	padding: 0;
+	margin-top: 2em;
+
+	li{
+
+		list-style: none;
+		text-align: center;
+		padding: 0.5em;
+	}
+}
+
 /* Finish */
+
+
