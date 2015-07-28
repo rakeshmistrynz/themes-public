@@ -20,19 +20,34 @@ var clean = require('gulp-clean');
 
 // DEV
 var notify = require('gulp-notify');
+var plumber = require('gulp-plumber');
+
+// Errors
+
+var onError = function (err) {  
+  gutil.beep();
+  console.log(err);
+  this.emit('end');
+};
 
 // Build
 
 gulp.task('sass:build', function () {
-  return gulp.src('scss/style.scss')
+  gulp.src('scss/style.scss')
+      .pipe(plumber({
+        handleError: onError
+    }))
     .pipe(sass())
-    .pipe(gulp.dest(''));
+    .pipe(gulp.dest('css'));
 });
 
 gulp.task('css:pub', ['sass:build'], function () {
-  return gulp.src('style.css')
-    // .pipe(minifycss())
-    .pipe(gulp.dest(''));
+  gulp.src('css/style.css')
+      .pipe(plumber({
+        handleError: onError
+    }))
+    //.pipe(minifycss())
+    .pipe(gulp.dest('./'));
 });
 
 // Watch
@@ -52,4 +67,4 @@ gulp.task('build:dev', []);
 gulp.task('build:prod', []);
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['css:pub', 'watch']);
+gulp.task('default', ['css:pub']);

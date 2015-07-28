@@ -11,8 +11,8 @@
 			<ul class="children">
 				<li class="page_item page_item_has_children <?=(get_the_ID() == 791)?"current_page_item":""?>"><a href="/configuration/configure-access/">Access Config</a>
 					<ul class="children">
-						<li class="page_item <?=(get_the_ID() == 553)?"current_page_item":""?>"><a href="/configuration/configure-access/user-configuration/">API Access Control</a></li>
-						<li class="page_item <?=(get_the_ID() == 800)?"current_page_item":""?>"><a href="/configuration/android-app-user-creation/">Android App User Creation</a></li>
+						<li class="page_item <?=(get_the_ID() == 553)?"current_page_item":""?>"><a href="/configuration/configure-access/API-access-control/">API Access Control</a></li>
+						<li class="page_item <?=(get_the_ID() == 800)?"current_page_item":""?>"><a href="/configuration/API-user-creation/">API User Creation</a></li>
 					</ul></li>
 				<li class="page_item <?=(get_the_ID() == 804)?"current_page_item":""?>"><a href="/configuration/android-app-profile/">App Profile Config</a></li>
 				<li class="page_item page_item_has_children <?=(get_the_ID() == 795)?"current_page_item":""?>"><a href="/configuration/configure-attributes/">Attributes Config</a>

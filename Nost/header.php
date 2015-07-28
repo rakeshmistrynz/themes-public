@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
  <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,7 +28,7 @@
       <nav id="navigation">
         <?php wp_nav_menu(array('theme_location' => 'global-nav', 'fallback_cb' => false, 'container' => false, 'menu_class' => '', 'items_wrap' => '<ul>%3$s</ul>', 'before' => '<h5>', 'after' => '</h5>')); ?>
       </nav>
-      <div id="mobile_menu"><span></span></div>
+      <!-- div id="mobile_menu"><span></span></div -->
       <?php endif; ?>
     </div>
   </div>
