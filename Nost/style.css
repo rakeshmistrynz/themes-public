@@ -1659,15 +1659,21 @@ h3.center {
   margin-top: 40px; }
 
 .post-box article.grid_3 {
-  width: 25%;
-  margin: 0;
-  display: inline; }
+  width: 24.5%;
+  display: inline-block;
+  position: relative;
+  float: none;
+  padding: 0 0.5px;
+  margin: 0; }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .post-box article.grid_3 {
       width: 100%; } }
   @media only screen and (max-width: 480px) {
     .post-box article.grid_3 {
       width: 100%; } }
+
+.post-box .features-box {
+  margin: 0; }
 
 .post-box article img {
   width: auto; }
@@ -1706,15 +1712,19 @@ div.breadcrumbs {
     margin: 0 0 1.25em; }
   .container_12 aside.sidebar h2, .container_12 aside.sidebar li {
     text-align: left; }
+  .container_12 aside.sidebar .tagcloud a {
+    color: white;
+    display: block;
+    font-size: 1em !important; }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .container_12 aside.sidebar {
       position: relative;
       height: auto;
       display: block;
       width: 100%;
-      padding: 0;
+      padding: 1em;
       margin: 0; }
-      .container_12 aside.sidebar h2, .container_12 aside.sidebar li {
+      .container_12 aside.sidebar h2, .container_12 aside.sidebar li, .container_12 aside.sidebar a {
         text-align: center; } }
   @media only screen and (max-width: 480px) {
     .container_12 aside.sidebar {
@@ -1722,9 +1732,9 @@ div.breadcrumbs {
       height: auto;
       display: block;
       width: 100%;
-      padding: 0;
+      padding: 1em;
       margin: 0; }
-      .container_12 aside.sidebar h2, .container_12 aside.sidebar li {
+      .container_12 aside.sidebar h2, .container_12 aside.sidebar li, .container_12 aside.sidebar a {
         text-align: center; } }
 
 .single-post #content_wrap {

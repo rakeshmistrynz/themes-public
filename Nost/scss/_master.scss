@@ -1751,9 +1751,12 @@ h3.center {
 // Change block sizes to fit inside grid
 .post-box article.grid_3{
 
-	width: 25%;
+	width: 24.5%;
+	display: inline-block;
+	position: relative;
+	float: none;
+	padding: 0 0.5px;
 	margin: 0;
-	display: inline;
 
 	@include medium-device{
 
@@ -1765,6 +1768,11 @@ h3.center {
 		width: 100%;
 	}
 
+}
+
+.post-box .features-box{
+
+	margin: 0;
 }
 
 //Stop icons from stretching
@@ -1831,16 +1839,26 @@ div.breadcrumbs{
 		text-align: left;
 	}
 
+	.tagcloud{
+
+		a{
+			color: white;
+			display: block;
+			font-size: 1em !important;
+		}
+
+	}
+
 	@include medium-device{
 
 		position: relative;
 		height: auto;
 		display: block;
 		width: 100%;
-		padding: 0;
+		padding: 1em;
 		margin: 0;
 
-		h2, li{
+		h2, li, a{
 
 			text-align: center;
 		}
@@ -1852,10 +1870,10 @@ div.breadcrumbs{
 		height: auto;
 		display: block;
 		width: 100%;
-		padding: 0;
+		padding: 1em;
 		margin: 0;
 
-		h2, li{
+		h2, li, a{
 		
 			text-align: center;
 		}
