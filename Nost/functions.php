@@ -265,5 +265,43 @@ function my_password_form() {
 }
 add_filter( 'the_password_form', 'my_password_form' );
 
+/**
+ * Display recent post in sidebar, based on page category
+ * @param  array $instance Saved values from database
+ * @return array $args     An array of arguments used to retrieve the recent posts
+ */
+function my_widget_posts_args($instance) {
+
+	if ( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
+ 		$number = 5;
+
+	$args = array(
+			'posts_per_page' => $number,
+			'no_found_rows' => true,
+			'post_status' => 'publish',
+			'ignore_sticky_posts' => true
+		);
+
+	if ( is_category() ) { //adds the category parameter in the query if we display a category
+		$cat = get_queried_object();
+		$args['cat'] = $cat->term_id;
+
+	} elseif ( is_single() ) { //adds the category parameter in the query if we display a post
+		global $post;
+		$cat = get_the_category($post->ID);
+		$cat_parent = $cat[0]->category_parent;
+		if ($cat_parent) {
+			$cat = get_category($cat_parent);
+			$cat = $cat->term_id;
+		} else {
+			$cat = $cat[0]->term_id;
+		}
+		$args["cat"] = $cat;
+	}
+
+	return $args;
+};
+
+add_filter( 'widget_posts_args', 'my_widget_posts_args');
 
 ?>
