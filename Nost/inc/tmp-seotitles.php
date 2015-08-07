@@ -23,11 +23,11 @@
 			
 		<?php } ?>
 		
-	<?php } elseif (is_taxonomy()) { ?>
+	<?php } elseif (is_taxonomy('name')) { ?>
 	
 		<?php single_term_title(); ?> // <?php bloginfo('name'); ?>
 		
-	<?php } elseif (is_tag()) { ?> 
+	<?php } elseif (is_tag('name')) { ?> 
 	
 		<?php single_tag_title();?> // <?php bloginfo('name'); ?>
 		
