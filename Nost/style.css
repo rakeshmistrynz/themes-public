@@ -1602,8 +1602,6 @@ h3.center {
 /* TradeMe pages END */
 /* Mobile */
 @media (max-width: 960px) {
-  #searchform {
-    display: none; }
   #get-it .get-it-item {
     background-position: 6px 50%;
     padding: 7px 15px 7px 48px; }
@@ -1722,7 +1720,7 @@ div.breadcrumbs {
       height: auto;
       display: block;
       width: 100%;
-      padding: 1em;
+      padding: 0;
       margin: 0; }
       .container_12 aside.sidebar h2, .container_12 aside.sidebar li, .container_12 aside.sidebar a {
         text-align: center; } }
@@ -1732,7 +1730,7 @@ div.breadcrumbs {
       height: auto;
       display: block;
       width: 100%;
-      padding: 1em;
+      padding: 0;
       margin: 0; }
       .container_12 aside.sidebar h2, .container_12 aside.sidebar li, .container_12 aside.sidebar a {
         text-align: center; } }
@@ -1897,6 +1895,51 @@ div.breadcrumbs {
     text-align: center;
     padding: 0.5em; }
 
+.results {
+  margin-top: 20px; }
+  .results article {
+    background-color: white;
+    padding: 0 0.5em; }
+    .results article h3 {
+      font-size: 2em;
+      margin-top: 10px;
+      color: #187FD0; }
+    .results article p {
+      font-size: 1.3em; }
+  .results .tags {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #187FD0;
+    color: white;
+    box-sizing: border-box;
+    padding: 0.2em; }
+    .results .tags a {
+      font-size: 1.1em;
+      font-weight: normal;
+      color: white; }
+
+/** Fix Footer to bottom of the page**/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+#content_wrap {
+  min-height: 100%;
+  position: relative; }
+
+#content_wrap {
+  padding-bottom: 100px;
+  /* Height of the footer element */ }
+
+footer {
+  width: 100%;
+  height: 100px;
+  float: left;
+  bottom: 0;
+  left: 0; }
+
+/** EO Fix Footer to bottom of the page**/
 /* Finish */
 .mobile {
   display: none; }

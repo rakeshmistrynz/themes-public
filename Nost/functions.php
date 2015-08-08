@@ -265,11 +265,10 @@ function my_password_form() {
 }
 add_filter( 'the_password_form', 'my_password_form' );
 
-/**
- * Display recent post in sidebar, based on page category
- * @param  array $instance Saved values from database
- * @return array $args     An array of arguments used to retrieve the recent posts
- */
+
+
+add_filter( 'widget_posts_args', 'my_widget_posts_args');
+
 function my_widget_posts_args($instance) {
 
 	if ( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
@@ -302,6 +301,13 @@ function my_widget_posts_args($instance) {
 	return $args;
 };
 
-add_filter( 'widget_posts_args', 'my_widget_posts_args');
+function search_content($content){
+
+	$content = strip_tags($content);
+
+	$excerpt = explode('.',$content);
+
+	return '<p>'.$excerpt[0].'...<a class="read-more" href="'. get_permalink(get_the_ID()).'">read more</a></p>';
+};
 
 ?>
