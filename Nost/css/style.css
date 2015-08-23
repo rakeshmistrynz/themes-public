@@ -1602,8 +1602,6 @@ h3.center {
 /* TradeMe pages END */
 /* Mobile */
 @media (max-width: 960px) {
-  #searchform {
-    display: none; }
   #get-it .get-it-item {
     background-position: 6px 50%;
     padding: 7px 15px 7px 48px; }
@@ -1659,15 +1657,21 @@ h3.center {
   margin-top: 40px; }
 
 .post-box article.grid_3 {
-  width: 25%;
-  margin: 0;
-  display: inline; }
+  width: 24.5%;
+  display: inline-block;
+  position: relative;
+  float: none;
+  padding: 0 0.5px;
+  margin: 0; }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .post-box article.grid_3 {
       width: 100%; } }
   @media only screen and (max-width: 480px) {
     .post-box article.grid_3 {
       width: 100%; } }
+
+.post-box .features-box {
+  margin: 0; }
 
 .post-box article img {
   width: auto; }
@@ -1706,6 +1710,10 @@ div.breadcrumbs {
     margin: 0 0 1.25em; }
   .container_12 aside.sidebar h2, .container_12 aside.sidebar li {
     text-align: left; }
+  .container_12 aside.sidebar .tagcloud a {
+    color: white;
+    display: block;
+    font-size: 1em !important; }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .container_12 aside.sidebar {
       position: relative;
@@ -1714,7 +1722,7 @@ div.breadcrumbs {
       width: 100%;
       padding: 0;
       margin: 0; }
-      .container_12 aside.sidebar h2, .container_12 aside.sidebar li {
+      .container_12 aside.sidebar h2, .container_12 aside.sidebar li, .container_12 aside.sidebar a {
         text-align: center; } }
   @media only screen and (max-width: 480px) {
     .container_12 aside.sidebar {
@@ -1724,7 +1732,7 @@ div.breadcrumbs {
       width: 100%;
       padding: 0;
       margin: 0; }
-      .container_12 aside.sidebar h2, .container_12 aside.sidebar li {
+      .container_12 aside.sidebar h2, .container_12 aside.sidebar li, .container_12 aside.sidebar a {
         text-align: center; } }
 
 .single-post #content_wrap {
@@ -1887,7 +1895,53 @@ div.breadcrumbs {
     text-align: center;
     padding: 0.5em; }
 
-/* Finish */
+.results {
+  margin-top: 20px; }
+  .results article {
+    background-color: white;
+    padding: 0 0.5em; }
+    .results article h3 {
+      font-size: 2em;
+      margin-top: 10px;
+      color: #187FD0; }
+    .results article p {
+      font-size: 1.3em; }
+  .results .tags {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #187FD0;
+    color: white;
+    box-sizing: border-box;
+    padding: 0.2em; }
+    .results .tags a {
+      font-size: 1.1em;
+      font-weight: normal;
+      color: white; }
+
+/* Fix Footer to bottom of page
+----------------------------------------------------------------------------------------------------*/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+#content_wrap {
+  min-height: 100%;
+  position: relative; }
+
+#content_wrap {
+  padding-bottom: 100px;
+  /* Height of the footer element */ }
+
+footer {
+  width: 100%;
+  height: 100px;
+  float: left;
+  bottom: 0;
+  left: 0; }
+
+/* EO Fix Footer to bottom of the page */
+/** EO _master.scss **/
 .mobile {
   display: none; }
 
