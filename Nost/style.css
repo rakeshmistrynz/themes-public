@@ -1296,11 +1296,7 @@ strong.description {
 
 .featured-image img {
   border: 0;
-  width: 25%;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out; }
+  width: 45%; }
 
 .features-box p {
   margin-bottom: 10px;
@@ -1341,7 +1337,6 @@ strong.description {
   opacity: 1; }
 
 .features-box:hover .featured-image img {
-  width: 45%;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
   opacity: 0.1; }
 
@@ -1680,7 +1675,7 @@ h3.center {
 ----------------------------------------------------------------------------------------------------*/
 .help-grid {
   margin-top: 40px; }
-  .help-grid h5 {
+  .help-grid .features-box h5 {
     font-size: 1.3em;
     font-weight: 700;
     text-align: center; }
@@ -1918,7 +1913,8 @@ div.breadcrumbs {
       font-weight: normal;
       color: white; }
 
-/** Fix Footer to bottom of the page**/
+/* Fix Footer to bottom of page
+----------------------------------------------------------------------------------------------------*/
 html, body {
   margin: 0;
   padding: 0;
@@ -1939,8 +1935,11 @@ footer {
   bottom: 0;
   left: 0; }
 
-/** EO Fix Footer to bottom of the page**/
-/* Finish */
+/* EO Fix Footer to bottom of the page */
+.features-box:hover .new_prod img {
+  width: auto; }
+
+/** EO _master.scss **/
 .mobile {
   display: none; }
 

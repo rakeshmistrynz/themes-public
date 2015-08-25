@@ -17,7 +17,7 @@ get_header(); ?>
 						</div>
 					</section>
 				
-					<div class="entry group">	
+					<div class="group">	
 						
 						<?php the_content(); ?>
 					

@@ -8,7 +8,7 @@ get_header(); ?>
 	
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
-			<article id="page-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
+			<article id="page-<?php the_ID(); ?>" <?php post_class(''); ?>>
 				<section id="title_wrap" class="grey">
 					<div class="container_12 group">
 						<h1 class="grey"><?php the_title(); ?></h1>
